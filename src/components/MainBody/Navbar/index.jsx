@@ -1,8 +1,18 @@
 import React from "react";
-import { Container } from "./style";
+import { Container, Title, Wrapper } from "./style";
 
 const Navbar = () => {
-  return <Container>Navbar</Container>;
+  return (
+    <Container>
+      <Wrapper>
+        <Title>
+          DELUXE HOUSE <br /> <small>design studio</small>
+        </Title>
+      </Wrapper>
+      <Wrapper></Wrapper>
+      <Wrapper></Wrapper>
+    </Container>
+  );
 };
 
 export default Navbar;
