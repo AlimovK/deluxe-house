@@ -19,7 +19,6 @@ const Navbar = () => {
         <NavbarTab>Кантакты</NavbarTab>
       </Wrapper>
       <Wrapper>
-        <CallIcon />
         <Phone>8 (700) 300-03-04</Phone>
       </Wrapper>
     </Container>
