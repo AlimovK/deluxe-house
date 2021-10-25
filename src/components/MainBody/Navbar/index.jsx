@@ -1,16 +1,27 @@
 import React from "react";
-import { Container, Title, Wrapper } from "./style";
+import { CallIcon, Container, NavbarTab, Phone, Title, Wrapper } from "./style";
 
 const Navbar = () => {
   return (
     <Container>
       <Wrapper>
         <Title>
-          DELUXE HOUSE <br /> <small>design studio</small>
+          DELUXE HOUSE
+          <br /> <small>design studio</small>
         </Title>
       </Wrapper>
-      <Wrapper></Wrapper>
-      <Wrapper></Wrapper>
+      <Wrapper>
+        <NavbarTab>Услуги</NavbarTab>
+        <NavbarTab>Ремонт</NavbarTab>
+        <NavbarTab>Портфолию</NavbarTab>
+        <NavbarTab>О нас</NavbarTab>
+        <NavbarTab>Статьи</NavbarTab>
+        <NavbarTab>Кантакты</NavbarTab>
+      </Wrapper>
+      <Wrapper>
+        <CallIcon />
+        <Phone>8 (700) 300-03-04</Phone>
+      </Wrapper>
     </Container>
   );
 };
