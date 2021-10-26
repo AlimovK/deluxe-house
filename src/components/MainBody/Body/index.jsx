@@ -1,8 +1,13 @@
 import React from "react";
-import { Container } from "./style";
+import { Container, Title } from "./style";
+import title from "../../../assets/img/title.png";
 
 const Body = () => {
-  return <Container></Container>;
+  return (
+    <Container>
+      <Title src={title} />
+    </Container>
+  );
 };
 
 export default Body;

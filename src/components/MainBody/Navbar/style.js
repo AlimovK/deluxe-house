@@ -11,24 +11,24 @@ export const Wrapper = styled.div`
   align-items: center;
   justify-content: space-around;
 `;
-export const Title = styled.div`
-  font-size: 20px;
-  line-height: 15px;
-  color: #fff;
-  :hover {
-    color: #e1dece;
-    cursor: pointer;
-  }
+
+export const Logo = styled.img`
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
 `;
 
 export const NavbarTab = styled.div`
   font-size: 14px;
+  padding: 10px;
   line-height: 16px;
   color: #ffffff;
   margin-left: 130px;
+  transition: all 0.1s ease-in-out;
   :hover {
     color: #e1dece;
     cursor: pointer;
+    border-bottom: 1px solid #e1dece;
   }
 `;
 
