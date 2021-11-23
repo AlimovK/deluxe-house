@@ -1,7 +1,11 @@
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 export const Container = styled.div`
   display: flex;
+  position: sticky;
+  top: 0;
+  background: #191919;
   justify-content: space-around;
   align-items: center;
 `;
@@ -18,13 +22,14 @@ export const Logo = styled.img`
   cursor: pointer;
 `;
 
-export const NavbarTab = styled.div`
-  font-size: 14px;
+export const NavbarTab = styled(Link)`
+  font-size: 17px;
   padding: 10px;
+  text-decoration: none;
   line-height: 16px;
   color: #ffffff;
   margin-left: 130px;
-  transition: all 0.1s ease-in-out;
+  transition: all 0.2s ease-in-out;
   :hover {
     color: #e1dece;
     cursor: pointer;

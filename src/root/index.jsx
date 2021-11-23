@@ -1,11 +1,14 @@
 import React from "react";
 import MainBody from "../components/MainBody";
+import { BrowserRouter as Router } from "react-router-dom";
+import Navbar from "../components/Navbar";
 
 const Root = () => {
   return (
-    <div>
+    <Router>
+      <Navbar />
       <MainBody />
-    </div>
+    </Router>
   );
 };
 
