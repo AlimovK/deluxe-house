@@ -5,6 +5,7 @@ export const Container = styled.div`
   display: flex;
   position: sticky;
   top: 0;
+  z-index: 99;
   background: #191919;
   justify-content: space-around;
   align-items: center;
@@ -27,13 +28,14 @@ export const NavbarTab = styled(Link)`
   padding: 10px;
   text-decoration: none;
   line-height: 16px;
-  color: #ffffff;
+  color: ${({ active }) => (active ? `#e1dece` : `#ffffff`)};
+  border-bottom: ${({ active }) => active && `1px solid #e1dece`};
   margin-left: 130px;
   transition: all 0.2s ease-in-out;
   :hover {
     color: #e1dece;
     cursor: pointer;
-    border-bottom: 1px solid #e1dece;
+    /* border-bottom: 1px solid #e1dece; */
   }
 `;
 

@@ -6,7 +6,7 @@ export const Container = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 876px;
+  height: 905px;
   background-image: url(${Bg});
   background-size: cover;
 `;
@@ -29,4 +29,23 @@ export const Button = styled.div`
   :hover {
     background: #e1dece;
   }
+`;
+export const ContactSection = styled.div`
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+`;
+export const InsideSlide = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 330px;
+  height: fit-content;
+`;
+export const Icons = styled.img`
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
 `;
